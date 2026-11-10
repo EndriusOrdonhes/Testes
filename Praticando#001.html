@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora De Média</title>
+
+</head>
+<body>
+
+    <script>
+     // NOTAS SALVAS AQUI
+     const nota1 = Number.parseFloat(window.prompt("Olá! Escreva sua nota aqui:  "))
+     const nota2 = Number.parseFloat(window.prompt("Escreva sua segunda nota:  "))
+
+     // CALCULADOR DE MÉDIA
+     const média = (nota1 + nota2) / 2;
+
+     // RESPOSTA
+    if (média >= 7) {
+        document.write("Aprovado!")
+        
+    } else if (média >= 5 && média < 7){
+        document.write("Recuperação!")
+
+    } else {
+        document.write("Reprovado!")
+    
+    } 
+    </script>
+</body>
+</html>
